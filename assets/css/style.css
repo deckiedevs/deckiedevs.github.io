@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Comfortaa, Helvetica, Arial, sans-serif;
+    font-family: Comfortaa, "Century Gothic", Helvetica, sans-serif;
     background-color: var(--dd-sand);
     color: var(--dd-sand);
 }
@@ -79,6 +79,7 @@ header nav ul {
 .flex-row-green {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     background-color: var(--dd-green);
     width: 70%;
     border: solid 10px var(--dd-grey);
@@ -89,6 +90,7 @@ header nav ul {
 .flex-row-blue {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     background-color: var(--dd-blue);
     width: 70%;
     border: solid 10px var(--dd-grey);
@@ -109,11 +111,26 @@ header nav ul {
 
 /* about me styles */
 
+.my-photo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 49.5%;
+    background-image: url("../images/me.jpg");
+    background-size: cover;
+    background-position: left bottom;
+    min-height: 350px;
+    border: solid 10px var(--dd-grey);
+}
+
 .me {
     display: flex;
+    flex-wrap: wrap;
+    width: 49.5%;
     padding: 15px;
     background-color: var(--dd-grey);
     color: var(--dd-sand);
+    font-weight: lighter;
+    line-height: 1.5;
 }
 
 /* portfolio style */
@@ -122,6 +139,7 @@ header nav ul {
     background-color: var(--dd-grey);
     width: 100%;
     padding: 15px;
+    font-weight: lighter;
 }
 
 /* contact me style */
@@ -130,6 +148,8 @@ header nav ul {
     background-color: var(--dd-grey);
     width: 100%;
     padding: 15px;
+    font-weight: lighter;
+    line-height: 1.5;
 }
 
 /* footer styles */
@@ -158,5 +178,6 @@ footer .copyright {
     display: flex;
     justify-content: flex-end;
     font-size: 1vw;
+    font-weight: lighter;
     margin: 0 10px 10px 0;
 }
