@@ -7,7 +7,8 @@
 
 body {
     font-family: Comfortaa, Helvetica, Arial, sans-serif;
-    background-color: rgb(224, 228, 204);
+    background-color: var(--dd-sand);
+    color: var(--dd-sand);
 }
 
 :root {
@@ -38,8 +39,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: sticky;
-    position: -webkit-sticky;
     top: 0;
     z-index: 9999;
 }
@@ -72,13 +71,70 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
-    color: rgb(224, 228, 204);
+    color: var(--dd-sand);
+}
+
+/* main styles */
+
+.flex-row-green {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--dd-green);
+    width: 70%;
+    border: solid 10px var(--dd-grey);
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.flex-row-blue {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--dd-blue);
+    width: 70%;
+    border: solid 10px var(--dd-grey);
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.section-header {
+    background-color: var(--dd-grey);
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.section-header h2 {
+    text-align: center;
+}
+
+/* about me styles */
+
+.me {
+    display: flex;
+    padding: 15px;
+    background-color: var(--dd-grey);
+    color: var(--dd-sand);
+}
+
+/* portfolio style */
+
+.portfolio-grid-wrapper {
+    background-color: var(--dd-grey);
+    width: 100%;
+    padding: 15px;
+}
+
+/* contact me style */
+
+.contact-form {
+    background-color: var(--dd-grey);
+    width: 100%;
+    padding: 15px;
 }
 
 /* footer styles */
 footer {
     background-color: rgb(85, 98, 112);
-    color: rgb(224, 228, 204);
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
