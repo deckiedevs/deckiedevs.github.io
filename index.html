@@ -22,7 +22,7 @@
             <ul>
                 <li><a href="#about-me">.aboutMe</a></li>
                 <li><a href="#my-portfolio">.myPortfolio</a></li>
-                <li><a href="#contact-me">.contactMe</a></li>
+                <li><a href="#reach-me">.reachMe</a></li>
             </ul>
         </nav>
     </header>
@@ -31,16 +31,16 @@
 
         <!-- about me section -->
         <section id="about-me">
-            <div class="flex-row-green">
+            <div class="flex-box-green">
                 <div class="section-header">
                     <h2>.aboutMe</h2>
                 </div>
                 <div class="my-photo">
-                    <!-- maybe add captions later -->
+                    <!-- maybe add caption later -->
                 </div>
                 <div class="me">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate ab eum veritatis tempora nobis perspiciatis iste quo accusantium ex blanditiis fugiat ipsam mollitia, libero nulla aliquam dolor! Voluptate, voluptates?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus distinctio, dignissimos esse sequi cupiditate quos minus assumenda odit velit, laboriosam veniam quidem corporis! Molestias possimus necessitatibus dolor saepe assumenda doloremque!
                     </p>
                 </div>
             </div>
@@ -48,7 +48,7 @@
     
         <!-- portfolio section -->
         <section id="my-portfolio">
-            <div class="flex-row-blue">
+            <div class="flex-box-blue">
                 <div class="section-header">
                     <h2>.myPortfolio</h2>
                 </div>
@@ -62,17 +62,37 @@
         </section>
     
         <!-- contact me section -->
-        <section id="contact-me">
-            <div class="flex-row-green">
+        <section id="reach-me">
+            <div class="flex-box-green">
                 <div class="section-header">
-                    <h2>.contactMe</h2>
+                    <h2>.reachMe</h2>
+                </div>
+                <div class="connect">
+                    <h3>Connect With Me</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/mila-decker/" target="_blank">Linked In</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/miladecker" targe="_blank">GitHub</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="contact-form">
+                    <h3>Contact Me</h3> 
                     <p>
-                        <!-- use form for contact -->
-                        <!-- add social media links -->
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsa debitis quos illum, facilis iusto neque recusandae sequi dolores? Accusamus nobis fuga fugit sequi dignissimos a magnam praesentium ea totam.
+                        Do you have comments or suggestions?  Please contact me at <a href="mailto:deckiedevs@gmail.com">deckiedevs@gmail.com</a> or use the form below!
                     </p>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" />
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Your email" />
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Leave a message!"></textarea>
+
+                        <button type="submit">SEND</button>
+                    </form>
                 </div>
             </div>
         </section>
