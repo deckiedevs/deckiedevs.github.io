@@ -139,9 +139,32 @@ header nav ul {
 /* portfolio style */
 
 .portfolio-grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--dd-grey);
     width: 100%;
-    padding: 15px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.portfolio-grid-container {
+    display: grid;
+    width: 90%;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.portfolio-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: solid 5px var(--dd-blue);
+}
+
+.showcase-project {
+    grid-area: 1 / 1 / 4 / 4;
+    justify-self: center;
+    align-self: center;
 }
 
 /* contact me style */
@@ -181,7 +204,7 @@ header nav ul {
     border-radius: 5px;
     opacity: 75%;
     font-family: Comfortaa, "Century Gothic", Helvetica, sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 0.15em;
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
