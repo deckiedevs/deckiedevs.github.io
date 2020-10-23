@@ -1,0 +1,64 @@
+/* media query for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+
+    body {
+        font-size: 1.5vw;
+    }
+
+    header h1 {
+        font-size: 5vw;
+        margin: 15px auto;
+    }
+
+    .my-photo {
+        width: 100%
+    }
+
+    .me {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .portfolio-thumbnail {
+        border: solid 3px var(--dd-blue);
+    }
+
+    #showcase-project .project-name {
+        padding: 10px 25px;
+    }
+
+    .project-name {
+        padding: 5px 10px;
+        font-size: 1vw;
+    }
+
+    .connect {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .social-media-wrapper {
+        justify-content: space-between;
+    }
+
+    .social-media-container {
+        grid-template: 1fr / repeat(8, 1fr);
+        margin: 20px auto;
+    }
+
+}
+
+/* media query for tablets and smaller*/
+@media screen and (max-width: 768px) {
+
+
+}
+
+/* media query for mobile phones and smaller */
+@media screen and (max-width: 575px) {
+
+}

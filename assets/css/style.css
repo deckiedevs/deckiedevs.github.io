@@ -46,14 +46,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    top: 0;
-    z-index: 9999;
 }
 
 header h1 {
     font-size: 4vw;
     width: 100%;
     margin: 25px auto;
+    text-align: center;
 }
 
 h1 span { 
@@ -194,14 +193,14 @@ nav li a {
 }
 
 #showcase-project .project-name {
-    bottom: 50px;
+    bottom: 8%;
     padding: 20px 50px;
 }
 
 .project-name {
     position: absolute;
     padding: 10px 20px;
-    bottom: 15px;
+    bottom: 8%;
     left: -300px;
     background-color: var(--dd-blue);
     opacity: 0;
@@ -229,7 +228,6 @@ nav li a {
 
 .social-media-container {
     display: grid;
-    width: 50%;
     grid-template: repeat(4,1fr) / 1fr 1fr;
     grid-gap: 10px;
     margin-top: 20px;
@@ -253,7 +251,7 @@ nav li a {
 
 /* contact me form style */
 
-.contact-form, .connect {
+.connect, .contact-form {
     background-color: var(--dd-grey);
     width: 49.5%;
     padding: 15px;
@@ -302,7 +300,7 @@ nav li a {
     background-color: var(--dd-green);
     font-family: Comfortaa, "Century Gothic", Helvetica, sans-serif;
     font-weight: bold;
-    transition: background-color 1s, color 1s;
+    transition: background-color .6s, color .6s;
 }
 
 .contact-form button:hover {
