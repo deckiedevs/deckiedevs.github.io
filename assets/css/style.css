@@ -176,22 +176,12 @@ nav li a {
     height: 100%;
     object-fit: cover;
     border: solid 5px var(--dd-blue);
-}
-
-.overlay {
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: var(--dd-grey);
-    opacity: .6;
+    opacity: 0.5;
     transition: opacity 1s;
 }
 
-.overlay:hover, .overlay::after {
-    opacity: 0;
+.portfolio-thumbnail:hover, .portfolio-thumbnail::after {
+    opacity: 1;
 }
 
 #showcase-project .project-name {
