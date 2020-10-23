@@ -1,4 +1,5 @@
-/* media query for smaller desktop screens and smaller */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
 @media screen and (max-width: 980px) {
 
     body {
@@ -52,10 +53,16 @@
 
 }
 
-/* media query for tablets and smaller*/
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+
 @media screen and (max-width: 768px) {
+
+    body {
+        font-size: 2vw;
+    }
     
     .flex-box-green, .flex-box-blue {
+        width: 80%;
         border: solid 7px var(--dd-grey);
         padding: 7px;
     }
@@ -86,9 +93,134 @@
         transform: translate(0, 0);
     }
 
+    .connect {
+        margin-bottom: 7px;
+    }
+
+    .contact-form button {
+        transition: none;
+    }
+
 }
 
-/* media query for mobile phones and smaller */
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
 @media screen and (max-width: 575px) {
 
+    body {
+        font-size: 4vw;
+    }
+
+    /* header styles */
+
+    header h1 {
+        font-size: 7vw;
+    }
+
+    .blue-line {
+        height: 7px;
+    }
+
+    header nav {
+        margin: 10px auto;
+    }
+
+    /* main styles */
+
+    .flex-box-green, .flex-box-blue {
+        width: 90%;
+        margin: 25px auto;
+        border: solid 5px var(--dd-grey);
+        border-radius: 0px;
+        padding: 5px;
+    }
+
+    .section-header {
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    /* about me style */
+
+    .my-photo {
+        min-height: 200px;
+        border: solid 8px var(--dd-grey);
+    }
+
+    .me {
+        margin-top: 5px;
+    }
+
+    /* portfolio style */
+
+    .portfolio-grid-wrapper {  
+        padding: 15px;
+    }
+
+    .portfolio-grid-container {
+        grid-template: repeat(4, 1fr) / 1fr;
+        width: 100%;
+    }
+
+    .portfolio-item {
+        flex-wrap: wrap;
+    }
+
+    #showcase-project {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+
+    .project-name {
+        display: none;
+    }
+
+    .project-name-mobile {
+        display: block;
+        margin: 8px auto;
+    }
+
+    .project-name-mobile h3 {
+        display: inline-block;
+    }
+
+    /* reach me style */
+
+    .social-media-wrapper {
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .social-media-container {
+        grid-template: 1fr / repeat(4, 1fr);
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .social-media-link {
+        display: none;
+    }
+
+    .social-media-icon-container {
+        justify-self: center;
+    }
+
+    .social-media-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* footer style */
+
+    .grey-line {
+        height: 7px;
+    }
+
+    footer h2 {
+        font-size: 3vw;
+        margin: 20px 5px 5px 0;
+    }
+
+    .copyright {
+        font-size: 3vw;
+    }
 }

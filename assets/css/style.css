@@ -19,20 +19,6 @@ body {
     font-weight: lighter;
 }
 
-.blue-line {
-    content: "";
-    background-color: var(--dd-blue);
-    height: 10px;
-    width: 100%
-};
-
-.grey-line {
-    content: "";
-    background-color: var(--dd-grey);
-    height: 10px;
-    width: 100%;
-}
-
 a {
     color: var(--dd-sand);
     text-decoration: none;
@@ -57,6 +43,13 @@ header h1 {
 
 h1 span { 
     color: var(--dd-green);
+}
+
+.blue-line {
+    content: "";
+    background-color: var(--dd-blue);
+    height: 10px;
+    width: 100%;
 }
 
 header nav {
@@ -217,6 +210,10 @@ nav li a {
     opacity: 1;
 }
 
+.project-name-mobile {
+    display: none;
+}
+
 /* social media style */
 
 .social-media-wrapper {
@@ -315,6 +312,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+}
+
+.grey-line {
+    content: "";
+    background-color: var(--dd-grey);
+    height: 10px;
+    width: 100%;
 }
 
 footer h2 {
