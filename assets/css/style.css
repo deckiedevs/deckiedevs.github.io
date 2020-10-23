@@ -167,7 +167,40 @@ header nav ul {
     align-self: center;
 }
 
-/* contact me style */
+/* social media style */
+
+.social-media-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.social-media-container {
+    display: grid;
+    width: 50%;
+    grid-template: repeat(4,1fr) / 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.social-media-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.social-media-icon-container {
+    justify-self: right;
+    align-self: center;
+}
+
+.social-media-link {
+    justify-self: left;
+    align-self: center;
+}
+
+/* contact me form style */
 
 .contact-form, .connect {
     background-color: var(--dd-grey);
@@ -179,10 +212,6 @@ header nav ul {
 #reach-me h3 {
     margin-bottom: 10px;
     text-align: center;
-}
-
-.connect ul {
-    list-style: none;
 }
 
 .contact-form p {
@@ -222,7 +251,7 @@ header nav ul {
     background-color: var(--dd-green);
     font-family: Comfortaa, "Century Gothic", Helvetica, sans-serif;
     font-weight: bold;
-    transition: background-color 1s;
+    transition: background-color 1s, color 1s;
 }
 
 .contact-form button:hover {
