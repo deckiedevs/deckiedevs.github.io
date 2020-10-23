@@ -134,11 +134,20 @@ nav li a {
 .me {
     display: flex;
     flex-wrap: wrap;
+    align-content: start;
     width: 49.5%;
-    padding: 15px;
+    padding: 30px;
     background-color: var(--dd-grey);
     color: var(--dd-sand);
     line-height: 1.5;
+}
+
+.me span {
+    color: var(--dd-green);
+}
+
+.me .intro {
+    margin-bottom: 30px;
 }
 
 /* portfolio style */
