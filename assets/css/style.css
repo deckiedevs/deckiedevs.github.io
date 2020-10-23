@@ -162,6 +162,13 @@ nav li a {
 .portfolio-item {
     display: flex;
     position: relative;
+    overflow: hidden;
+}
+
+#showcase-project {
+    grid-area: 1 / 1 / 4 / 4;
+    justify-self: center;
+    align-self: center;
 }
 
 .portfolio-thumbnail {
@@ -169,12 +176,6 @@ nav li a {
     height: 100%;
     object-fit: cover;
     border: solid 5px var(--dd-blue);
-}
-
-#showcase-project {
-    grid-area: 1 / 1 / 4 / 4;
-    justify-self: center;
-    align-self: center;
 }
 
 .overlay {
@@ -191,6 +192,31 @@ nav li a {
 
 .overlay:hover, .overlay::after {
     opacity: 0;
+}
+
+#showcase-project .project-name {
+    bottom: 50px;
+    padding: 20px 50px;
+}
+
+.project-name {
+    position: absolute;
+    padding: 10px 20px;
+    bottom: 15px;
+    left: -300px;
+    background-color: var(--dd-blue);
+    opacity: 0;
+    transition: transform 1s, opacity 1.5s;
+    z-index: 2;
+}
+
+.project-name h3 {
+    display: inline;
+}
+
+.portfolio-item:hover .project-name {
+    transform: translate(300px, 0);
+    opacity: 1;
 }
 
 /* social media style */
