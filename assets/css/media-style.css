@@ -54,7 +54,37 @@
 
 /* media query for tablets and smaller*/
 @media screen and (max-width: 768px) {
+    
+    .flex-box-green, .flex-box-blue {
+        border: solid 7px var(--dd-grey);
+        padding: 7px;
+    }
 
+    .section-header {
+        margin-bottom: 7px;
+    }
+
+    .me {
+        margin-top: 7px;
+    }
+
+    .me .intro {
+        margin-bottom: 15px;
+    }
+
+    .portfolio-thumbnail {
+        opacity: 1;
+    }
+
+    .project-name {
+        left: 0;
+        opacity: 1;
+        transition: none;
+    }
+
+    .portfolio-item:hover .project-name {
+        transform: translate(0, 0);
+    }
 
 }
 

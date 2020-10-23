@@ -23,8 +23,8 @@ body {
     content: "";
     background-color: var(--dd-blue);
     height: 10px;
-    width: 100%;
-}
+    width: 100%
+};
 
 .grey-line {
     content: "";
