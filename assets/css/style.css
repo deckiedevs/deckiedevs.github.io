@@ -73,6 +73,18 @@ nav li a {
     padding: 5px 15px;
 }
 
+.blue-button:hover {
+    background-color: var(--dd-blue);
+    color: var(--dd-grey);
+    font-weight: bold;
+}
+
+.green-button:hover {
+    background-color: var(--dd-green);
+    color: var(--dd-grey);
+    font-weight: bold;
+}
+
 /* main styles */
 
 .flex-box-green {

@@ -1,15 +1,14 @@
 # .deckieDevs
 
-## Contents
-1. [Purpose](#purpose)
-2. [Built With](#built-with)
-3. [Features](#features)
-4. [Website](#website)
-5. [Task List](#task-list)
-6. [Contribution](#contribution)
-
 ## Purpose
 .deckieDevs is Mila Decker's web development portfolio.  On October 8, 2020, Mila enrolled in the University of Central Florida Coding Boot Camp. The portfolio currently showcases the assignments she has completed as a UCF Boot Camp student.  The website itself is an application of the knowledge that she has gained throughout the program.  Soon, .deckieDevs will be filled with Mila's own personal projects and applications.
+
+## Contents
+1. [Built With](#built-with)
+2. [Features](#features)
+3. [Website](#website)
+4. [Task List](#task-list)
+5. [Contribution](#contribution)
 
 ## Built With
 * HTML
