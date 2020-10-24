@@ -20,14 +20,14 @@ As of initial deployment on October 23, 2020, .deckieDevs features:
 * CSS Flexboxes
 * CSS Grids
 * CSS Transitions
-* Mobile Query Responsiveness
+* Media Query Responsiveness
 
 .deckieDevs is best enjoyed on a web browser, but is adaptable to mobile screens!
 
 ## Website
 ![.deckieDevs Deployed Page](./assets/images/deckiedevs-screenshot.png)
 
-[Deployed .deckieDevs Web Page](https://miladecker.github.io)
+[Deployed .deckieDevs Web Page](https://deckiedevs.github.io)
 
 ## Task List
 - [x] Review/refactor code
