@@ -30,7 +30,7 @@ As of initial deployment on October 23, 2020, .deckieDevs features:
 [Deployed .deckieDevs Web Page](https://miladecker.github.io)
 
 ## Task List
-- [ ] Review/refactor code
+- [x] Review/refactor code
 - [ ] Learn and apply JavaScript!
 
 ## Contribution
