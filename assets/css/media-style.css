@@ -11,6 +11,8 @@
         margin: 15px auto;
     }
 
+    /* about me style */
+
     .my-photo {
         width: 100%
     }
@@ -19,6 +21,8 @@
         width: 100%;
         margin-top: 10px;
     }
+
+    /* portfolio style */
 
     .portfolio-thumbnail {
         border: solid 3px var(--dd-blue);
@@ -33,6 +37,8 @@
         font-size: 1vw;
     }
 
+    /* reach me style */
+
     .connect {
         width: 100%;
         margin-bottom: 10px;
@@ -44,6 +50,7 @@
 
     .social-media-wrapper {
         justify-content: space-between;
+        margin-top: 10px;
     }
 
     .social-media-container {
@@ -61,6 +68,13 @@
         font-size: 2vw;
     }
     
+    .blue-button:hover,
+    .green-button:hover {
+        background-color: var(--dd-grey);
+        color: var(--dd-sand);
+        font-weight: lighter;
+    }
+    
     .flex-box-green, .flex-box-blue {
         width: 80%;
         border: solid 7px var(--dd-grey);
@@ -71,6 +85,8 @@
         margin-bottom: 7px;
     }
 
+    /* about me style */
+
     .me {
         margin-top: 7px;
     }
@@ -78,6 +94,8 @@
     .me .intro {
         margin-bottom: 15px;
     }
+
+    /* portfolio style */
 
     .portfolio-thumbnail {
         opacity: 1;
@@ -93,12 +111,34 @@
         transform: translate(0, 0);
     }
 
+    /* reach me style */
+
     .connect {
         margin-bottom: 7px;
     }
 
-    .contact-form button {
-        transition: none;
+    .social-media-wrapper {
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .social-media-container {
+        grid-template: 1fr / repeat(4, 1fr);
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .social-media-link {
+        display: none;
+    }
+
+    .social-media-icon-container {
+        justify-self: center;
+    }
+
+    .contact-form button:hover {
+        background-color: var(--dd-green);
+        color: var(--dd-grey);
     }
 
 }
@@ -185,25 +225,6 @@
 
     /* reach me style */
 
-    .social-media-wrapper {
-        justify-content: space-between;
-        margin: 0 auto;
-    }
-
-    .social-media-container {
-        grid-template: 1fr / repeat(4, 1fr);
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .social-media-link {
-        display: none;
-    }
-
-    .social-media-icon-container {
-        justify-self: center;
-    }
-
     .social-media-icon {
         width: 50px;
         height: 50px;
@@ -223,4 +244,5 @@
     .copyright {
         font-size: 3vw;
     }
+
 }

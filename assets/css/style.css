@@ -1,4 +1,5 @@
-/* general styles */
+/* GENERAL STYLES */
+
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +25,7 @@ a {
     text-decoration: none;
 }
 
-/* header styles */
+/* HEADER STYLES */
 
 header {
     background-color: var(--dd-grey);
@@ -85,7 +86,7 @@ nav li a {
     font-weight: bold;
 }
 
-/* main styles */
+/* MAIN STYLES */
 
 .flex-box-green {
     display: flex;
@@ -122,7 +123,7 @@ nav li a {
     text-align: center;
 }
 
-/* about me styles */
+/* ABOUT ME STYLES */
 
 .my-photo {
     display: flex;
@@ -146,15 +147,15 @@ nav li a {
     line-height: 1.5;
 }
 
-.me span {
-    color: var(--dd-green);
-}
-
 .me .intro {
     margin-bottom: 30px;
 }
 
-/* portfolio style */
+.me span {
+    color: var(--dd-green);
+}
+
+/* PORTFOLIO STYLE */
 
 .portfolio-grid-wrapper {
     display: flex;
@@ -193,7 +194,7 @@ nav li a {
     transition: opacity 1s;
 }
 
-.portfolio-thumbnail:hover, .portfolio-thumbnail::after {
+.portfolio-thumbnail:hover {
     opacity: 1;
 }
 
@@ -213,26 +214,35 @@ nav li a {
     z-index: 2;
 }
 
-.project-name h3 {
-    display: inline;
-}
-
 .portfolio-item:hover .project-name {
     transform: translate(300px, 0);
     opacity: 1;
+}
+
+.project-name h3 {
+    display: inline;
 }
 
 .project-name-mobile {
     display: none;
 }
 
-/* social media style */
+/* CONNECT STYLE */
+
+.connect,
+.contact-form {
+    background-color: var(--dd-grey);
+    width: 49.5%;
+    padding: 15px;
+    line-height: 1.5;
+}
 
 .social-media-wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .social-media-container {
@@ -242,15 +252,15 @@ nav li a {
     margin-top: 20px;
 }
 
+.social-media-icon-container {
+    justify-self: right;
+    align-self: center;
+}
+
 .social-media-icon {
     width: 50px;
     height: 50px;
     object-fit: cover;
-}
-
-.social-media-icon-container {
-    justify-self: right;
-    align-self: center;
 }
 
 .social-media-link {
@@ -258,14 +268,7 @@ nav li a {
     align-self: center;
 }
 
-/* contact me form style */
-
-.connect, .contact-form {
-    background-color: var(--dd-grey);
-    width: 49.5%;
-    padding: 15px;
-    line-height: 1.5;
-}
+/* CONTACT FORM STYLE */
 
 #reach-me h3 {
     margin-bottom: 10px;
@@ -283,7 +286,8 @@ nav li a {
     text-align: center;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     margin: 5px 0;
     padding: 10px;
@@ -294,7 +298,8 @@ nav li a {
     letter-spacing: 0.15em;
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
     font-weight: bold;
     outline: none;
     opacity: 100%;
@@ -307,6 +312,7 @@ nav li a {
     margin: 15px 0;
     padding: 10px 20px;
     background-color: var(--dd-green);
+    color: var(--dd-grey);
     font-family: Comfortaa, "Century Gothic", Helvetica, sans-serif;
     font-weight: bold;
     transition: background-color .6s, color .6s;
@@ -317,7 +323,7 @@ nav li a {
     color: var(--dd-sand);
 }
 
-/* footer styles */
+/* FOOTER STYLE */
 
 footer {
     background-color: rgb(85, 98, 112);
