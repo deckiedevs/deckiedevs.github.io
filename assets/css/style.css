@@ -180,7 +180,7 @@ nav li a {
 }
 
 #showcase-project {
-    grid-area: 1 / 1 / 4 / 4;
+    grid-area: 1 / 1 / 3 / 3;
     justify-self: center;
     align-self: center;
 }
@@ -212,6 +212,7 @@ nav li a {
     opacity: 0;
     transition: transform 1s, opacity 1.5s;
     z-index: 2;
+    font-size: 14px;
 }
 
 .portfolio-item:hover .project-name {
