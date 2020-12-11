@@ -38,6 +38,7 @@ let myProjects = [
     }
 ]
 
+// creates portfolio thumbnails
 for (let i = 0; i < myProjects.length; i++) {
     var portfolioContainer = document.querySelector('.portfolio-grid-container');
 
