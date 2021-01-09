@@ -8,4 +8,4 @@ function component() {
     return element;
 }
 
-document.body.appendChild(compontent());
+document.body.appendChild(component());
