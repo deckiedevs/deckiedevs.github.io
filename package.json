@@ -1,0 +1,28 @@
+{
+  "name": "deckiedevs",
+  "version": "1.0.0",
+  "description": "deckieDevs personal portfolio",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deckiedevs/deckiedevs.github.io.git"
+  },
+  "author": "Mila Decker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deckiedevs/deckiedevs.github.io/issues"
+  },
+  "homepage": "https://github.com/deckiedevs/deckiedevs.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "webpack": "^5.12.2",
+    "webpack-cli": "^4.3.1"
+  }
+}
