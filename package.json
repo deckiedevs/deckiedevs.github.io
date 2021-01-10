@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,12 @@
   "dependencies": {
     "@barba/core": "^2.9.7",
     "express": "^4.17.1",
+    "gsap": "^3.5.1",
     "lodash": "^4.17.20"
   },
   "devDependencies": {
     "webpack": "^5.12.2",
     "webpack-cli": "^4.3.1"
-  }
+  },
+  "main": "server.js"
 }

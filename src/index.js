@@ -1,11 +1,17 @@
-import _ from 'lodash';
+import barba from '@barba/core';
 
-function component() {
-    const element = document.createElement('div');
-
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-    return element;
-}
-
-document.body.appendChild(component());
+barba.init({
+    transitions: [{
+        name: 'default-transition',
+        leave(data) {
+            return gsap.to(data.current.container, {
+                opacity: 0
+            })
+        },
+        enter(data) {
+            return gsap.from(data.next.container, {
+                opacity: 0
+            })
+        }
+    }]
+});

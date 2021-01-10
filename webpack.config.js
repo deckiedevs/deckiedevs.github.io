@@ -5,6 +5,6 @@ module.exports = {
     mode: 'none',
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, 'public')
+        path: path.resolve(__dirname, './public/assets/js')
     }
 };
