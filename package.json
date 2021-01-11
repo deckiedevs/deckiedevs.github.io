@@ -19,10 +19,10 @@
   },
   "homepage": "https://github.com/deckiedevs/deckiedevs.github.io#readme",
   "dependencies": {
-    "@barba/core": "^2.9.7",
+    "@babel/core": "^7.12.10",
+    "@dogstudio/highway": "^2.2.1",
     "express": "^4.17.1",
-    "gsap": "^3.5.1",
-    "lodash": "^4.17.20"
+    "gsap": "^3.5.1"
   },
   "devDependencies": {
     "webpack": "^5.12.2",

@@ -10,47 +10,29 @@
     <title>deckieDevs - aboutMe</title>
 </head>
 
-<body data-barba="wrapper" data-barba="container" data-barba-namespace="about">
-    <!-- header -->
-    <header>
-        <h1>
-            <a href="/">deckie<span>Devs</span></a>
-        </h1>
-        <div class="blue-line"></div>
-
-        <!-- navigation -->
-        <nav>
-            <ul>
-                <li><a href="./about.html" class="blue-button">aboutMe</a></li>
-                <li><a href="./portfolio.html" class="green-button">myPortfolio</a></li>
-                <li><a href="./contact.html" class="blue-button">reachMe</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main data-barba="container" data-barba-namespace="index">
-
-        <!-- about me section -->
-        <section id="about-me">
-            <div class="flex-box-green">
-                <div class="section-header">
-                    <h2>aboutMe</h2>
-                </div>
-                <div class="my-photo">
-                </div>
-                <div class="me">
-                    <p class="intro">
-                        Hello! My name is <span><strong>Mila Decker</strong></span>. I am an Orlando-based full-stack
-                        student currently enrolled in the University of Central Florida Coding Boot Camp. I enjoy clean
-                        designs and torturing myself over why my code isn't rendering as expected. When I'm not focused
-                        on my coursework, I am also employed full-time as a Forensic Firearms Specialist.
-                    </p>
-                    <p>This site, <strong>deckie<span>Devs</span></strong>, is currently the home of my UCF
-                        assignments, but I hope to fill it with my personal projects very soon!</p>
+<body>
+    <main data-router-wrapper>
+        <section data-router-view="about" class="about">
+            <div class="about-content">
+                <div class="about-presentation flex-box-green">
+                    <div class="section-header">
+                        <h2>aboutMe</h2>
+                    </div>
+                    <div class="my-photo">
+                    </div>
+                    <div class="me">
+                        <p class="intro">
+                            Hello! My name is <span><strong>Mila Decker</strong></span>. I am an Orlando-based full-stack
+                            student currently enrolled in the University of Central Florida Coding Boot Camp. I enjoy clean
+                            designs and torturing myself over why my code isn't rendering as expected. When I'm not focused
+                            on my coursework, I am also employed full-time as a Forensic Firearms Specialist.
+                        </p>
+                        <p>This site, <strong>deckie<span>Devs</span></strong>, is currently the home of my UCF
+                            assignments, but I hope to fill it with my personal projects very soon!</p>
+                    </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- footer -->
@@ -60,8 +42,7 @@
         <h2>.deckie<span>Devs</span> is the brainchild of Mila Decker</h2>
         <div class="copyright">&copy; 2020 .deckieDevs</div>
     </footer>
-
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

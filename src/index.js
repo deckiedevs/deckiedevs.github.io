@@ -1,17 +1,8 @@
-import barba from '@barba/core';
+import Highway from '@dogstudio/highway';
+import Fade from './transitions';
 
-barba.init({
-    transitions: [{
-        name: 'default-transition',
-        leave(data) {
-            return gsap.to(data.current.container, {
-                opacity: 0
-            })
-        },
-        enter(data) {
-            return gsap.from(data.next.container, {
-                opacity: 0
-            })
-        }
-    }]
+const H = new Highway.Core({
+    transitions: {
+        default: Fade
+    }
 });
