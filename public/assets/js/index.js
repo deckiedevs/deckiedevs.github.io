@@ -45,7 +45,7 @@ class Fade extends _dogstudio_highway__WEBPACK_IMPORTED_MODULE_0__.default.Trans
     in({from, to, done}){
         
         gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.fromTo(to, 0.5, { left: '-100%', top: '50%'}, { left: '0%'})
-        gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.fromTo(to, 1, { height: '2vh'}, {delay: 0.5, height: '90vh', top: '10%', onComplete: function(){
+        gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.fromTo(to, 1, { height: '2vh'}, {delay: 0.5, height: '80vh', top: '20%', onComplete: function(){
                 from.remove();
                 done();
             }})
