@@ -19,13 +19,13 @@
   },
   "homepage": "https://github.com/deckiedevs/deckiedevs.github.io#readme",
   "dependencies": {
-    "@babel/core": "^7.12.10",
     "@dogstudio/highway": "^2.2.1",
     "express": "^4.17.1",
-    "gsap": "^3.5.1"
+    "gsap": "^3.5.1",
+    "install": "^0.13.0",
+    "webpack": "^5.13.0"
   },
   "devDependencies": {
-    "webpack": "^5.12.2",
     "webpack-cli": "^4.3.1"
   },
   "main": "server.js"
