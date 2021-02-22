@@ -54,7 +54,7 @@ const myProjects = [
         name: 'Note Taker',
         technologies: 'Node.js/Express.js/JavaScript'
     }, {
-        link: 'https://dashboard.heroku.com/apps/dd-special',
+        link: 'https://dd-special.herokuapp.com/',
         img: './assets/images/project-10.png',
         text: 'Something Special, a second-hand event decor marketplace created with MySQL and Handlebars',
         name: 'Something Special',
