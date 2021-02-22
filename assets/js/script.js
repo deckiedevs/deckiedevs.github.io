@@ -34,8 +34,7 @@ const myProjects = [
         img: './assets/images/project-6.png',
         text: 'What\'s For Dinner?, my first group project.',
         name: 'What\'s For Dinner?',
-        technologies: 'JavaScript/Materialize/HTML',
-        showcase: true
+        technologies: 'JavaScript/Materialize/HTML'
     }, {
         link: 'https://github.com/deckiedevs/readme-generator',
         img: './assets/images/project-7.png',
@@ -54,6 +53,13 @@ const myProjects = [
         text: 'Note Taker, an Express.js application for taking notes',
         name: 'Note Taker',
         technologies: 'Node.js/Express.js/JavaScript'
+    }, {
+        link: 'https://dashboard.heroku.com/apps/dd-special',
+        img: './assets/images/project-10.png',
+        text: 'Something Special, a second-hand event decor marketplace created with MySQL and Handlebars',
+        name: 'Something Special',
+        technologies: 'Node.js/Express.js/MySQL/Handlebars',
+        showcase: true
     }
 ]
 
