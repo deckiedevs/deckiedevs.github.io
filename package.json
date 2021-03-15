@@ -1,32 +1,43 @@
 {
   "name": "deckiedevs",
-  "version": "1.0.0",
-  "description": "deckieDevs personal portfolio",
+  "version": "2.0.0",
+  "description": "deckieDevs Personal Portfolio",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/deckiedevs/deckiedevs.github.io.git"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "author": "Mila Decker",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/deckiedevs/deckiedevs.github.io/issues"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "homepage": "https://github.com/deckiedevs/deckiedevs.github.io#readme",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
-    "@dogstudio/highway": "^2.2.1",
-    "express": "^4.17.1",
-    "gsap": "^3.5.1",
-    "install": "^0.13.0",
-    "webpack": "^5.13.0"
+    "@material-ui/core": "^4.11.3",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.3",
+    "web-vitals": "^1.1.1"
   },
-  "devDependencies": {
-    "webpack-cli": "^4.3.1"
-  },
-  "main": "server.js"
+  "devDependencies": {}
 }

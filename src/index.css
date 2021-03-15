@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #80CBC4;
+    --dark: #263238;
+    --dark-light: #3C474C;
+    --light: #8B969A;
+    --bg-dark: rgba(0,0,0,.75);
+    --spacing-one: calc(1rem * 0.5);
+    --spacing-two: calc(1rem);
+    --spacing-five: calc(2.5rem);
+}
+
+body {
+    font-family: 'Ubuntu Condensed', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: url(./assets/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+
+/* display styles */
+.h100 {
+    height:100%
+}
+
+.w100 {
+    width: 100%
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-content: center;
+}
+
+.circle {
+    border-radius: 100%;
+}
+
+/* margin and padding styles */
+.mx-1 {
+    margin-right: var(--spacing-one);
+    margin-left: var(--spacing-one);
+}
+  
+.mx-2 {
+    margin-right: var(--spacing-two);
+    margin-left: var(--spacing-two);
+}
+
+.mx-5 {
+    margin-left: var(--spacing-five);
+    margin-right: var(--spacing-five);
+}
+  
+.my-1 {
+    margin-top: var(--spacing-one);
+    margin-bottom: var(--spacing-one);
+}
+  
+.my-2 {
+    margin-top: var(--spacing-two);
+    margin-bottom: var(--spacing-two);
+}
+  
+.my-5 {
+    margin-top: var(--spacing-five);
+    margin-bottom: var(--spacing-five);
+}
+  
+.px-1 {
+    padding-right: var(--spacing-one);
+    padding-left: var(--spacing-one);
+}
+  
+.px-2 {
+    padding-right: var(--spacing-two);
+    padding-left: var(--spacing-two);
+}
+
+.px-5 {
+    padding-left: var(--spacing-five);
+    padding-right: var(--spacing-five);
+}
+  
+.py-1 {
+    padding-top: var(--spacing-one);
+    padding-bottom: var(--spacing-one);
+}
+  
+.py-2 {
+    padding-top: var(--spacing-two);
+    padding-bottom: var(--spacing-two);
+}
+
+.py-5 {
+    padding-top: var(--spacing-five);
+    padding-bottom: var(--spacing-five);
+}
+
+.mt-1 {
+    margin-top: var(--spacing-one);
+}
+
+.mt-2 {
+    margin-top: var(--spacing-two);
+}
+
+.mb-1 {
+    margin-bottom: var(--spacing-one);
+}
+
+.mb-2 {
+    margin-bottom: var(--spacing-two);
+}
+
+/* font and color styles */
+.bg-dark {
+    background-color: var(--bg-dark);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* navbar styles */
+header h2 a {
+    text-decoration: none;
+    color: white
+}
+
+nav li{
+    cursor: pointer;
+    list-style: none;
+}
+
+#profile-pic {
+    background: url(./assets/images/deckie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
