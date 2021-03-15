@@ -1,40 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function Nav() {
+function Nav(props) {
     
-    function navSelected() {
-        console.log('clicked')
-    }
-
+    // destructure props
+    const {
+        pages = [],
+        setCurrentPage,
+        currentPage
+    } = props;
+    
     return (
         <header className="flex-row justify-space-between px-2 bg-dark">
-            <h2 className="my-2">
+            <h2 className="flex-row my-2 align-center">
                 <a href="/">
                     deckieDevs
                 </a>
             </h2>
             <nav>
                 <ul className="flex-row h100 align-center">
-                    <li className="my-2 mx-2">
-                        <span onClick={navSelected}>
-                            About Me
+                    {pages.map(page => (
+                        <li className={`my-2 mx-2 ${page.name === currentPage.name && 'navActive'}`} key={page.name}>
+                            <span onClick={() => {
+                                setCurrentPage(page)
+                            }}
+                        >
+                            {page.name}
                         </span>
-                    </li>
-                    <li className="my-2 mx-2">
-                        <span onClick={navSelected}>
-                            Portfolio
-                        </span>
-                    </li>
-                    <li className="my-2 mx-2">
-                        <span onClick={navSelected}>
-                            Resume
-                        </span>
-                    </li>
-                    <li className="my-2 mx-2">
-                        <span onClick={navSelected}>
-                            Contact
-                        </span>
-                    </li>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>

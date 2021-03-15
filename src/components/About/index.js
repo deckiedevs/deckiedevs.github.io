@@ -19,8 +19,8 @@ function About () {
                         xs={12}>
                         <h2 className="mb-2">about<span className="text-primary">Me</span></h2>
                     </Grid>
-                    <Grid container item xd={12} md={4}>
-                        <img className="w100 circle px-1 py-1" id="profile-pic" src={deckie} />
+                    <Grid container item xs={12} md={4}>
+                        <img className="w100 circle px-1 py-1" id="profile-pic" src={deckie} alt="Mila Decker of deckieDevs" />
                     </Grid>
                     <Grid container item xs={12} md={8}>
                         <p>

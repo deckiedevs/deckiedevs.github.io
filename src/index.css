@@ -149,6 +149,13 @@ body {
 }
 
 /* navbar styles */
+header {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    z-index: 100;
+}
+
 header h2 a {
     text-decoration: none;
     color: white
@@ -157,6 +164,18 @@ header h2 a {
 nav li{
     cursor: pointer;
     list-style: none;
+}
+
+.navActive {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+
+/* main styles */
+main {
+    top: 5rem;
+    position: absolute;
+    overflow-y: hidden;
 }
 
 #profile-pic {
