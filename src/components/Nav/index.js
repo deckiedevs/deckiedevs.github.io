@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import '../../assets/css/nav.css';
 
 function Nav(props) {
     
@@ -13,7 +14,7 @@ function Nav(props) {
         <header className="flex-row justify-space-between px-2 bg-dark">
             <h2 className="flex-row my-2 align-center">
                 <a href="/">
-                    deckieDevs
+                    deckie<span className="text-primary">Devs</span>
                 </a>
             </h2>
             <nav>

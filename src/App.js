@@ -12,7 +12,7 @@ function App() {
         { name : 'About' },
         { name: 'Portfolio' },
         { name: 'Resume' },
-        { name: 'Contact '}
+        { name: 'Contact' }
     ]);
     const [currentPage, setCurrentPage] = useState(pages[0]);
 
