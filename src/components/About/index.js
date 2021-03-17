@@ -1,5 +1,4 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
 import deckie from '../../assets/images/deckie.jpg';
 import '../../assets/css/about.css';
 
