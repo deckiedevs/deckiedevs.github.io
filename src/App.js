@@ -7,7 +7,6 @@ import Resume from './components/Resume';
 
 function App() {
 
-    // const [activePage, setActivePage] = useState(false);
     const [pages] = useState([
         { name : 'About' },
         { name: 'Portfolio' },
