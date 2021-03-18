@@ -8,7 +8,8 @@ function Modal({ onClose, displayedProject }) {
         link,
         text,
         name,
-        technologies
+        technologies,
+        description
     } = displayedProject;
 
     return (
@@ -17,9 +18,7 @@ function Modal({ onClose, displayedProject }) {
             <div className="modal-card w100 px-5 py-5">
                 <h3>{name}</h3>
                 <p>
-                    {link}
-                    {text}
-                    {technologies}
+                    {description}
                 </p>
                 <FontAwesomeIcon icon={faTimes} size="lg" onClick={onClose} className="modal-btn" />
             </div>

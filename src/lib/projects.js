@@ -12,59 +12,125 @@ function importAll(req) {
 };
 
 // passes in assets/images/projects folder to importAll() function
-export const images = importAll(require.context('../assets/images/projects', false, /\.png$/));
+export const images = importAll(require.context('../assets/images/projects/thumbnails', false, /\.png$/));
 
 // array of projects to display
 export const projects = [
     {
         id: 1,
-        link: 'https://deckiedevs.github.io/horiseon/',
-        text: 'Horiseon, a practice in debugging and refactoring.',
-        name: 'Horiseon',
-        technologies: 'HTML/CSS'
-    }, {
-        id: 2,
-        link: 'https://deckiedevs.github.io/password-generator',
-        text: 'Password Generator, my first assignment with JavaScript.',
         name: 'Password Generator',
-        technologies: 'JavaScript'
-    }, {
-        id: 3,
-        link: 'https://deckiedevs.github.io/code-quiz',
-        text: 'JavaScript Code Quiz, an interactive quiz that implements DOM manipulation.',
-        name: 'JavaScript Code Quiz',
-        technologies: 'JavaScript/HTML/CSS'
-    }, {
-        id: 4,
-        link: 'https://deckiedevs.github.io/scheduler',
-        text: 'Work Day Scheduler, an productivity application that utilizes JQuery and Bootstrap.',
-        name: 'Work Day Scheduler',
-        technologies: 'JQuery/Bootstrap/HTML'
-    }, {
-        id: 5,
-        link: 'https://deckiedevs.github.io/weather-dashboard',
-        text: 'Weather Dashboard, a weather application using the OpenWeather API.',
-        name: 'Weather Dashboard',
-        technologies: 'JavaScript/Bootstrap/HTML'
-    }, {
-        id: 6,
-        link: 'https://github.com/deckiedevs/readme-generator',
-        text: 'README Generator, a Node.js application to generate a professional README with Inquirer.',
-        name: 'README Generator',
-        technologies: 'Node.js/Inquirer/JavaScript'
-    }, {
-        id: 7,
-        link: 'https://github.com/deckiedevs/team-profile-generator',
-        text: 'Team Profile Generator, an application for creating a team roster using Node.js and Inquirer.',
-        name: 'Team Profile Generator',
-        technologies: 'Node.js/Jest/Inquirer'
-    }, {
-        id: 8,
-        link: 'https://deckiedevs-note-taker.herokuapp.com',
-        text: 'Note Taker, an Express.js application for taking notes',
-        name: 'Note Taker',
-        technologies: 'Node.js/Express.js/JavaScript'
+        text: 'Password Generator, my first assignment with JavaScript.',
+        technologies: 'JavaScript',
+        deployed: true,
+        link: 'https://deckiedevs.github.io/password-generator',
+        github: 'https://github.com/deckiedevs/password-generator',
+        description: 'The Password Generator was my first JavaScript assignment.  Upon clicking "Generate Password," the user is given a series of prompts to design the password composition.  A pool of possible password characters is created based off of user response, and the password is generated with Math.random().'
     }, 
+    {
+        id: 2,
+        name: 'JavaScript Code Quiz',
+        text: 'JavaScript Code Quiz, an interactive quiz that implements DOM manipulation.',
+        technologies: 'JavaScript, HTML, CSS',
+        deployed: true,
+        link: 'https://deckiedevs.github.io/code-quiz',
+        github: 'https://github.com/deckiedevs/code-quiz',
+        description: 'This quick and simple JavaScript assignment dynamically creates DOM elements to render questions and answers.  Scores are saved using local storage and can be viewed on the ranked scoreboard.'
+    }, 
+    {
+        id: 3,
+        name: 'Work Day Scheduler',
+        text: 'Work Day Scheduler, an productivity application that utilizes JQuery and Bootstrap.',
+        technologies: 'JQuery, Moment.js, Bootstrap, HTML, CSS',
+        deployed: true,
+        link: 'https://deckiedevs.github.io/scheduler',
+        github: 'https://github.com/deckiedevs/scheduler',
+        description: 'Built with JQuery and Bootstrap, this Work Day Scheduler allows users to plan their 9 to 5 day.  The scheduler is updated in real time using Moment.js with the current time block being highlighted in red and future time blocks displayed in green.'
+    },
+    {
+        id: 4,
+        name: 'Weather Dashboard', 
+        text: 'Weather Dashboard, a weather application using the OpenWeather API.',
+        technologies: 'Open Weather API, Moment.js, JavaScript, Bootstrap, HTML',
+        deployed: true,
+        link: 'https://deckiedevs.github.io/weather-dashboard',
+        github: 'https://github.com/deckiedevs/weather-dashboard',
+        description: 'This weather application uses the OpenWeather API to display the daily and 5-day forecast of the user searched U.S. city.  Up to five of the most recently searched cities are saved.'
+    }, 
+    {
+        id: 5,
+        name: 'README Generator',
+        text: 'README Generator, a Node.js application to generate a professional README with Inquirer.',
+        technologies: 'Node.js, Inquirer.js, JavaScript',
+        deployed: false,
+        github: 'https://github.com/deckiedevs/readme-generator',
+        description: 'The README Generator is a Node.js application built with Inquirer.js.  The README Generator a professional README markdown file based on user input for desired sections.'
+    }, 
+    {
+        id: 6,
+        name: 'Team Profile Generator',
+        text: 'Team Profile Generator, an application for creating a team roster using Node.js and Inquirer.',
+        technologies: 'Node.js, Inquirer.js, Jest, JavaScript',
+        deployed: false,
+        github: 'https://github.com/deckiedevs/team-profile-generator',
+        description: 'The Team Profile Generator was an exercise in object-oriented programming and test-driven developement.  The application itself runs in Node.js and uses Inquirer.js to create a simple webpage featuring a development team\'s roster.  Tests for the application were written using Jest.'
+    }, 
+    {
+        id: 7,
+        name: 'Note Taker',
+        text: 'Note Taker, an Express.js application for taking notes.',
+        technologies: 'Express.js, Node.js, UUID, JavaScript',
+        deployed: true,
+        link: 'https://deckiedevs-note-taker.herokuapp.com',
+        github: 'https://github.com/deckiedevs/note-taker',
+        description: 'Note Taker was my first Express.js assignment.  It uses POST and DELETE routes to create, edit, and delete notes from the db.json file.'
+    }, 
+    {
+        id: 8,
+        name: 'Employee Tracker',
+        text: 'Employee Tracker, an application that allows business owners to manage employees.',
+        technologies: 'MySQL, Node.js, Inquirer.js, JavaScript',
+        deployed: false,
+        github: 'https://github.com/deckiedevs/employee-tracker',
+        description: 'Employee Tracker uses MySQL to track employees and their roles, departments, and salaries within a company.  The application was built in Node.js and uses Inquirer.js to allow the user to interact with the database.'
+    }, 
+    {
+        id: 9,
+        name: 'e-Commerce Back End',
+        text: 'e-Commerce Back End, the back-end of an e-commerce site.',
+        technologies: 'MySQL, Sequelize, Node.js, Express.js, JavaScript',
+        deployed: false,
+        github: 'https://github.com/deckiedevs/e-commerce-back-end',
+        description: 'The e-Commerce Back End application was an exercise in REST APIs and CRUD operations.  The application does not have a front-end for public use, but API GET, POST, PUT, and DELETE routes are fully functional for maintaining a commerce database of products, product tags, and product categories.'
+    },
+    {
+        id: 10,
+        name: 'The Tech Blog',
+        text: 'The Tech Blog, a REST API blog.',
+        technologies: 'MySQL, Sequelize, Express.js, Express Sessions, Node.js, Bcrypt, Handlebars',
+        deployed: true,
+        link: 'https://deckiedevs-tech-blog.herokuapp.com/',
+        github: 'https://github.com/deckiedevs/tech-blog',
+        description: 'The Tech Blog is a REST API blog created with MySQL and Sequelize.  Users can create accounts to post to the blog or comment on existing posts.  A user\'s post and comment history can be viewed from their dashboard.'
+    },
+    {
+        id: 11,
+        name: 'Social Network API',
+        text: 'Social Network API, a REST API built with MongoDB and Mongoose.',
+        technologies: 'MongoDB, Mongoose, Express.js, Node.js',
+        deployed: false,
+        github: 'https://github.com/deckiedevs/social-network-api',
+        description: 'This Social Network API was a REST API exercise built with MongoDB and Mongoose.  It does not have a front-end for public use, but API GET, POST, PUT, and DELETE routes can be tested in clients such as Insomnia Core or Postman.'
+    },
+    {
+        id: 12,
+        name: 'Budget Tracker',
+        text: 'Budget Tracker, a simple progressive web application to track finances.',
+        technologies: 'IndexedDB, Service Workers, JavaScript',
+        deployed: true,
+        link: 'https://dd-budget-tracker.herokuapp.com/index.html',
+        github: 'https://github.com/deckiedevs/budget-tracker',
+        description: 'The Budget Tracker is a progressive web application that uses IndexedDB and service workers to be fully functional offline.'
+    }
 ];
 
 export const showcase = [
@@ -73,7 +139,7 @@ export const showcase = [
         link: 'https://deckiedevs.github.io/whats-for-dinner',
         text: 'What\'s For Dinner?, my first group project.',
         name: 'What\'s For Dinner?',
-        technologies: 'JavaScript/Materialize/HTML'
+        technologies: 'JavaScript/Materialize/HTML',
     },
     {
         id: 2,

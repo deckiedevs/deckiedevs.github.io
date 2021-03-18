@@ -28,6 +28,7 @@ function Portfolio() {
                 <ResponsiveMasonry
                     columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
                     <Masonry>
+                        {/* displays newest projects first */}
                         {projects.map(project => (
                             <img 
                                 key={project.id}
