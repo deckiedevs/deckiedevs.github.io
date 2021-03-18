@@ -1,17 +1,10 @@
 import React, { useState } from 'react';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import Modal from '../Modal';
-import { images, projects, showcase } from '../../lib/projects'
+import { projects, showcase } from '../../lib/projects'
 
 function Portfolio() {
    
-    // adds images to projects array
-    projects.forEach((project, i) => {
-        i < 9 ?
-            project.image = images[`0${i + 1}.png`].default :
-            project.image = images[`${i + 1}.png`].default
-    });
-
     const [displayedProject, setDisplayedProject] = useState();
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -28,7 +21,6 @@ function Portfolio() {
                 <ResponsiveMasonry
                     columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
                     <Masonry>
-                        {/* displays newest projects first */}
                         {projects.map(project => (
                             <img 
                                 key={project.id}

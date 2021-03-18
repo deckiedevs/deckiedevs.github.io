@@ -8,7 +8,7 @@ function importAll(req) {
         images[item.replace('./', '')] = req(item) 
     });
 
-    return images
+    return images;
 };
 
 // passes in assets/images/projects folder to importAll() function
@@ -132,6 +132,16 @@ export const projects = [
         description: 'The Budget Tracker is a progressive web application that uses IndexedDB and service workers to be fully functional offline.'
     }
 ];
+
+// adds images to projects array
+projects.forEach((project, i) => {
+    i < 9 ?
+        project.image = images[`0${i + 1}.png`].default :
+        project.image = images[`${i + 1}.png`].default
+});
+
+// displays newest projects first
+projects.reverse();
 
 export const showcase = [
     {
