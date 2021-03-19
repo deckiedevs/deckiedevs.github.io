@@ -1,29 +1,18 @@
 import React, { useState } from 'react';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
-import Modal from '../Modal';
-import Showcase from '../Showcase';
-import { projects } from '../../lib/projects'
+import { showcase } from '../../lib/projects'
 
-function Portfolio() {
+function Showcase(props) {
+    const { toggleModal } = props
    
-    const [displayedProject, setDisplayedProject] = useState();
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
-    const toggleModal = project => {
-        setDisplayedProject(project);
-        setIsModalOpen(!isModalOpen);
-    };
-
     return (
-        <section className="flex-row justify-center vw100">
-            {isModalOpen && <Modal displayedProject={displayedProject} onClose={toggleModal} />}
-            <Showcase toggleModal={toggleModal} />
+        <section className="flex-row justify-center vw100 mb-5">
             <div className="w75 bg-dark px-5 py-5">
-                <h2 className="text-center mb-2">my<span className="text-primary">Projects</span></h2>
+                <h2 className="text-center mb-2">my<span className="text-primary">Favorites</span></h2>
                 <ResponsiveMasonry
                     columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
                     <Masonry>
-                        {projects.map(project => (
+                        {showcase.map(project => (
                             <img 
                                 key={project.id}
                                 src={project.image}
@@ -38,4 +27,4 @@ function Portfolio() {
     );
 };
 
-export default Portfolio;
+export default Showcase;

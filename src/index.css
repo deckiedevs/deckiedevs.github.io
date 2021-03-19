@@ -158,6 +158,10 @@ main {
     margin-bottom: var(--spacing-two);
 }
 
+.mb-5 {
+    margin-bottom: var(--spacing-five);
+}
+
 .pl-2 {
     padding-left: var(--spacing-two);
 }

@@ -12,7 +12,7 @@ function importAll(req) {
 };
 
 // passes in assets/images/projects folder to importAll() function
-export const images = importAll(require.context('../assets/images/projects/thumbnails', false, /\.png$/));
+const images = importAll(require.context('../assets/images/projects/thumbnails', false, /\.png$/));
 
 // array of projects to display
 export const projects = [
@@ -143,19 +143,41 @@ projects.forEach((project, i) => {
 // displays newest projects first
 projects.reverse();
 
+// same logic for showcase items below this point
+
+const showcaseImages = importAll(require.context('../assets/images/showcase/thumbnails', false, /\.png$/));
+
 export const showcase = [
     {
         id: 1,
-        link: 'https://deckiedevs.github.io/whats-for-dinner',
-        text: 'What\'s For Dinner?, my first group project.',
         name: 'What\'s For Dinner?',
-        technologies: 'JavaScript/Materialize/HTML',
+        text: 'What\'s For Dinner?, my first group project.',
+        technologies: 'JavaScript, Spoonacular API, Math.js, HTML, Materialize',
+        deployed: true,
+        link: 'https://deckiedevs.github.io/whats-for-dinner',
+        github: 'https://github.com/deckiedevs/whats-for-dinner',
+        description: 'What\'s For Dinner is a recipe finder application that allows users to plan dinner based on user selected input for type of cuisine, dietary restrictions, and desired ingredients.  Users can save their favorite recipes and return to them later!'
     },
     {
         id: 2,
-        link: 'https://dd-special.herokuapp.com/',
-        text: 'Something Special, a second-hand event decor marketplace created with MySQL and Handlebars',
         name: 'Something Special',
-        technologies: 'Node.js/Express.js/MySQL/Handlebars'
+        text: 'Something Special, a second-hand event decor marketplace created with MySQL and Handlebars',
+        technologies: 'Node.js, Express.js, MySQL, Sequelize, Firebase, Handlebars',
+        deployed: true,
+        link: 'https://dd-special.herokuapp.com/',
+        github: 'https://github.com/deckiedevs/something-special',
+        description: 'Something Special is a full-stack REST API website that allows users to post and comment on listings for second-hand event decor items.  It was built in just two weeks and features a live preview for editing posts and a post search feature.'
+    },
+    {
+        id: 3,
+        name: 'Prentus',
+        text: 'Prentus, a website to discover tech talent.',
+        technologies: 'BootStrap, Versoly',
+        deployed: true,
+        link: 'https://prentus.co/',
+        github: 'N/A',
+        description: 'Prentus was my first project to be used live outside of the UCF BootCamp.  I was tasked with rendering the second section of the home page entitled "Where We Find Undiscovered Talent".  The page was built using Versoly, a landing page builder, and BootStrap.  The design was provided by Prentus founder Rod Danan.'
     }
 ];
+
+showcase.forEach((project, i) => project.image = showcaseImages[`0${i + 1}.png`].default)
