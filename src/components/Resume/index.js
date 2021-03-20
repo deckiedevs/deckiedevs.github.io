@@ -9,9 +9,9 @@ function Resume() {
     return (
         <section className="flex-row justify-center vw100">
             <div className="w75 bg-dark px-5 py-5 flex-row justify-center">
-                <div className="w25 text-center">
+                <div className="side-container">
                     <div className="resume-block">
-                        <h2>Mila <span className="text-primary">Decker</span></h2>
+                        <h2 className="mb-1">Mila <span className="text-primary">Decker</span></h2>
                         <h4>Orlando-based Web Developer</h4>
                         <form method="get" action={myResume} target="_blank">
                             <button type="submit" className="btn">
@@ -32,8 +32,21 @@ function Resume() {
                             <li>A.A. & A.S. in General Studies</li>
                         </ul>
                     </div>
+                    <div className="resume-block">
+                        <h5>Certifications</h5>
+                        <ul className="resume-list">
+                            <li>
+                                Certified Senior Crime Scene Analyst <br />
+                                <span className="italic text-small">The International Association of Identification</span>
+                            </li>
+                            <li>
+                                Certified Firearms Specialist <br />
+                                <span className="italic text-small">The International Firearms Specialist Academy</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="w75">
+                <div className="experience-container">
                     <h3>Experience</h3>
                     {/* renders job experience from experience array in lib folder */}
                     {experience.map(job => (

@@ -166,6 +166,10 @@ main {
     margin-bottom: var(--spacing-five);
 }
 
+.ml-2 {
+    margin-left: var(--spacing-two);
+}
+
 .pl-2 {
     padding-left: var(--spacing-two);
 }
@@ -181,6 +185,14 @@ main {
 
 .bold {
     font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.text-small {
+    font-size: .8rem;
 }
 
 .navActive {

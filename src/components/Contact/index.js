@@ -48,7 +48,7 @@ function Contact() {
                         </div>
                     )}
                     {!errorMessage && (
-                        <button className="form-btn" type="submit">SEND</button>
+                        <button className="btn" type="submit">SEND</button>
                     )}
                 </form>
             </div>

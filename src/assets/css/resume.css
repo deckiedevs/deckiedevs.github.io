@@ -1,3 +1,13 @@
+.experience-container {
+    width: 75%;
+    padding-left: var(--spacing-two);
+}
+
+.side-container {
+    width: 25%;
+    text-align: center;
+}
+
 .resume-block {
     margin: var(--spacing-two) auto;
     line-height: 1.3rem;
@@ -14,4 +24,24 @@
 
 .experience-list li {
     margin: auto var(--spacing-five);
+}
+
+@media screen and (max-width: 800px) {
+    .experience-container {
+        width: 100%;
+        padding: 0;
+        margin-top: var(--spacing-two)
+    }
+
+    .experience-container h3 {
+        text-align: center;
+    }
+
+    .side-container {
+        width: 100%;
+    }
+    
+    .experience-list li {
+        margin: auto var(--spacing-two);
+    }
 }
