@@ -1,7 +1,17 @@
 .resume-block {
     margin: var(--spacing-two) auto;
+    line-height: 1.3rem;
 }
 
 .resume-list {
     list-style-type: none;
+}
+
+.resume-date {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.experience-list li {
+    margin: auto var(--spacing-five);
 }
