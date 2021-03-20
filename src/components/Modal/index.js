@@ -6,7 +6,6 @@ import '../../assets/css/modal.css';
 function Modal({ onClose, displayedProject }) {
     const {
         name,
-        text,
         technologies,
         deployed,
         link,
