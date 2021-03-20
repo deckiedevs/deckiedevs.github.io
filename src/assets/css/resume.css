@@ -1,0 +1,7 @@
+.resume-block {
+    margin: var(--spacing-two) auto;
+}
+
+.resume-list {
+    list-style-type: none;
+}

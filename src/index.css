@@ -150,6 +150,10 @@ main {
     margin-top: var(--spacing-two);
 }
 
+.mr-1 {
+    margin-right: var(--spacing-one);
+}
+
 .mb-1 {
     margin-bottom: var(--spacing-one);
 }
@@ -219,7 +223,7 @@ a:hover {
     margin-bottom: 2px;
 }
 
-.form-btn {
+.btn {
     padding: .5rem .8rem;
     margin: .5rem 0;
     background-color: var(--dark-light);
@@ -231,6 +235,6 @@ a:hover {
     transition: background-color .75s;
 }
 
-.form-btn:hover {
+.btn:hover {
     background-color: var(--primary);
 }
