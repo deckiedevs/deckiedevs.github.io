@@ -214,6 +214,11 @@ a:hover {
     color: var(--primary)
 }
 
+/* container styles */
+.section-container {
+    padding: var(--spacing-five);
+}
+
 /* form control */
 .form-control {
     margin-top: 5px;
@@ -248,9 +253,16 @@ a:hover {
     font-weight: bold;
     border-radius: 5px;
     border: 1px solid var(--dark);
-    transition: background-color .75s;
+    transition: background-color .5s;
 }
 
 .btn:hover {
     background-color: var(--primary);
+}
+
+
+@media screen and (max-width: 576px) {
+    .section-container {
+        padding: var(--spacing-two);
+    }
 }

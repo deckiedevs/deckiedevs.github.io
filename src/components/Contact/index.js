@@ -29,7 +29,7 @@ function Contact() {
 
     return (
         <section className="flex-row justify-center vw100">
-            <div className="w75 bg-dark px-5 py-5">
+            <div className="w75 bg-dark section-container">
                 <h2 className="text-center mb-2">contact<span className="text-primary">Me</span></h2>
                 <p class="mb-2">
                     Do you have comments or suggestions? Please contact me at <a

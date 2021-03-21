@@ -8,7 +8,7 @@ import '../../assets/css/resume.css';
 function Resume() {
     return (
         <section className="flex-row justify-center vw100">
-            <div className="w75 bg-dark px-5 py-5 flex-row justify-center">
+            <div className="w75 bg-dark section-container flex-row justify-center">
                 <div className="side-container">
                     <div className="resume-block">
                         <h2 className="mb-1">Mila <span className="text-primary">Decker</span></h2>
