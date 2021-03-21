@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Nav from './components/Nav';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
@@ -32,6 +33,7 @@ function App() {
                 {currentPage.name === 'Resume' && <Resume />}
                 {currentPage.name === 'Contact' && <Contact />}
             </main>
+            <Footer />
         </div>
     );
 };

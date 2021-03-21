@@ -11,7 +11,7 @@ function Nav(props) {
     } = props;
     
     return (
-        <header className="flex-row justify-space-between px-2 bg-dark">
+        <header className="flex-row justify-space-between px-2">
             <h2 className="flex-row my-2 align-center">
                 <a href="/">
                     deckie<span className="text-primary">Devs</span>
