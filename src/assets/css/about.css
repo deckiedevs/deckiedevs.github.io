@@ -1,0 +1,41 @@
+#my-picture {
+    width: 25%;
+    font-size: 3rem;
+}
+
+#profile-pic {
+    padding: var(--spacing-one);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#about-me {
+    width: 75%;
+    padding-left: var(--spacing-two);
+}
+
+#about-me p {
+    margin-bottom: var(--spacing-two);
+    line-height: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+    #my-picture {
+        width: 50%;
+        justify-self: center;
+        margin-bottom: var(--spacing-two);
+    }
+    
+    #about-me {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #my-picture {
+        width: 75%;
+    }
+}
