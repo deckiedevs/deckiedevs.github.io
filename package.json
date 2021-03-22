@@ -3,11 +3,14 @@
   "version": "2.0.0",
   "description": "deckieDevs Personal Portfolio",
   "private": true,
+  "homepage": "http://deckiedevs.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Mila Decker",
   "license": "ISC",
