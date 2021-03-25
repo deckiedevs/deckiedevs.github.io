@@ -175,7 +175,7 @@ export const showcase = [
         technologies: 'BootStrap, Versoly',
         deployed: true,
         link: 'https://prentus.co/',
-        github: 'N/A',
+        github: false,
         description: 'Prentus was my first project to be used live outside of the UCF BootCamp.  I was tasked with rendering the second section of the home page entitled "Where We Find Undiscovered Talent".  The page was built using Versoly, a landing page builder, and BootStrap.  The design was provided by Prentus founder Rod Danan.'
     }
 ];

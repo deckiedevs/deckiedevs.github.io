@@ -31,10 +31,12 @@ function Modal({ onClose, displayedProject }) {
                             <a href={link} target="_blank">{name}</a>
                         </p>
                     }
+                    { github && 
                     <p>
                         <span className="bold">GitHub: </span> 
                         <a href={github} target="_blank">{name} Repository</a>
                     </p>
+                    }
                     <p>
                         <span className="bold">Description: </span> {description}
                     </p>
