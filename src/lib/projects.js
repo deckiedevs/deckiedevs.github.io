@@ -130,6 +130,16 @@ export const projects = [
         link: 'https://dd-budget-tracker.herokuapp.com/index.html',
         github: 'https://github.com/deckiedevs/budget-tracker',
         description: 'The Budget Tracker is a progressive web application that uses IndexedDB and service workers to be fully functional offline.'
+    },
+    {
+        id: 13,
+        name: 'Book Search',
+        text: 'Book Search, a Google Books API powered search engine.',
+        technologies: 'GraphQL, MongoDB, Mongoose, Google Books API, JavaScript',
+        deployed: true,
+        link: 'https://dd-book-search.herokuapp.com/',
+        github: 'https://github.com/deckiedevs/book-search',
+        description: 'Book Search is a search engine powered by the Google Books API.  Users may search for books in the search bar.  The searched books will display information regarding the book, including title, author(s), an image, and a short description.  Users who are logged in may save their books to view later.'
     }
 ];
 
@@ -166,7 +176,7 @@ export const showcase = [
         deployed: true,
         link: 'https://dd-special.herokuapp.com/',
         github: 'https://github.com/deckiedevs/something-special',
-        description: 'Something Special is a full-stack REST API website that allows users to post and comment on listings for second-hand event decor items.  It was built in just two weeks and features a live preview for editing posts and a post search feature.'
+        description: 'Something Special is a full-stack REST API website that allows users to post and comment on listings for second-hand event decor items.  It was built in just two weeks and features a live preview for editing posts and a post search feature.  The application requires the user to log in to view listings.  Please feel free to use the credentials \'test@test.com\' and \'password\' to log in and view the page.'
     },
     {
         id: 3,
