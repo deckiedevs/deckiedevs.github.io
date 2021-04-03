@@ -135,11 +135,20 @@ export const projects = [
         id: 13,
         name: 'Book Search',
         text: 'Book Search, a Google Books API powered search engine.',
-        technologies: 'GraphQL, MongoDB, Mongoose, Google Books API, JavaScript',
+        technologies: 'GraphQL, MongoDB, Mongoose, Google Books API, JavaScript.',
         deployed: true,
         link: 'https://dd-book-search.herokuapp.com/',
         github: 'https://github.com/deckiedevs/book-search',
         description: 'Book Search is a search engine powered by the Google Books API.  Users may search for books in the search bar.  The searched books will display information regarding the book, including title, author(s), an image, and a short description.  Users who are logged in may save their books to view later.'
+    },
+    {
+        id: 14,
+        name: 'Shop-Shop with Redux',
+        text: 'Shop-Shop, an e-commerce site built with React-Redux and Stripe API.',
+        deployed: true,
+        link: 'https://dd-shop-redux.herokuapp.com/',
+        github: 'https://github.com/deckiedevs/shop-shop-redux',
+        description: 'Shop Shop is a MERN stack e-commerce website that uses React-Redux and Stripe API.  To test the deployed application, you may log in using the email "test@test.com" and the password "password".'
     }
 ];
 
