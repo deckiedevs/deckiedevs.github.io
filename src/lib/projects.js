@@ -189,13 +189,13 @@ export const showcase = [
     },
     {
         id: 3,
-        name: 'Prentus',
-        text: 'Prentus, a website to discover tech talent.',
-        technologies: 'BootStrap, Versoly',
+        name: 'Food Baby',
+        text: 'Food Baby, an food ordering template that can be tailored to any restaurant.',
+        technologies: 'React.js, MongoDB, Apollo Server, FireBase, Bcrypt, Stripe, Express.js, Node.js',
         deployed: true,
-        link: 'https://prentus.co/',
-        github: false,
-        description: 'Prentus was my first project to be used live outside of the UCF BootCamp.  I was tasked with rendering the second section of the home page entitled "Where We Find Undiscovered Talent".  The page was built using Versoly, a landing page builder, and BootStrap.  The design was provided by Prentus founder Rod Danan.'
+        link: 'https://food-babycmnw.herokuapp.com/',
+        github: 'https://github.com/Nickhill2380/food-baby',
+        description: 'Food Baby is a MERN stack application that was built in just two weeks.  Food Baby is a food ordering platform that can be tailored to be personalized for any restaurants.  Users can create an account to order from the menu and checkout with Stripe.  Their order history is saved to their account.  Additionally, Food Baby is seeded with an admin account that enables the owner to update their menu from the admin dashboard.  To test a basic "user" account type, please log in using "jcena@food-baby.com" and the password "password12345".  To test an "owner" account, please log in using "admin@food-baby.com" and the password "password12345".'
     }
 ];
 
